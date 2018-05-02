@@ -1,0 +1,16 @@
+-- 3 hours. Changes 
+-- ANTH. 3180 Visual Anthropology 
+
+Aug. 22 2018 - Eff date.
+Aug. 22 2017 - last revision
+
+SELECT * FROM sims.ERP.crse_catalog WHERE descr LIKE 'Visual Anth%' --AND effdt < '06/01/2018'
+ORDER BY  effdt desc, crse_id 
+
+SELECT * FROM sims.erp.crse_component where crse_id = 111364
+
+SELECT * FROM sims.ERP.crse_offer WHERE crse_id = 111364
+WHERE subject = 'ANTHR' --AND catalog_nbr = '3180'
+ORDER BY effdt desc
+
+SELECT TOP 1 term_end_dt FROM erp.term_tbl where acad_career = 'UGRD' and strm = '1189'
